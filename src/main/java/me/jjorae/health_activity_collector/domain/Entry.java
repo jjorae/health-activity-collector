@@ -32,6 +32,6 @@ public class Entry extends BaseEntity {
     private Double caloriesValue;
     private Double steps;
     @ManyToOne
-    @JoinColumn(name = "record_id")
+    @JoinColumn(name = "record_key")
     private Record record;
 }

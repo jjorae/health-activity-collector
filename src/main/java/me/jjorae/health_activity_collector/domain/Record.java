@@ -24,7 +24,7 @@ public class Record extends BaseEntity {
     @Id
     private String recordKey;
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "record_id")
+    @JoinColumn(name = "record_key")
     private List<Entry> entries;
     private String productName;
     private String productVender;
